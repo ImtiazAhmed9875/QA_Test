@@ -22,8 +22,8 @@ public Registration(WebDriver driver) {
 
     public void reg(String User,String email,String pass,String cpass){
         driver.findElement(Signup).click();
-        Select select = new Select(driver.findElement(Signup));
-        select.selectByVisibleText("Candidate");
+        //Select select = new Select(driver.findElement(Signup));
+        //select.selectByVisibleText("Candidate");
         driver.findElement(UserName).sendKeys(User);
         driver.findElement(Email).sendKeys(email);
         driver.findElement(Password).sendKeys(pass);
